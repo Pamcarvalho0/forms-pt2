@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Heróis</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de Gadges</h1>
+            <small>Preencha os dados abaixo:</small>
+        </header>
+        <main>
+            <section id="intro">
+                <h2>Novo Gadget</h2>
+                <form id="form-gadgets">
+                    <label for="title">Nome do Gadget:</label>
+                    <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+                    <label for="categoria">Categoria do Gadget:</label>
+                    <input id="categoria" name="categoria" type="text" required />
+                    <label for="marca">Marca do Gadget:</label>
+                    <input id="marca" name="marca" type="text" required />
+                    <label for="preco">Preço do Gadget:</label>
+                    <input id="preco" name="preco" type="text" required />
+                    <label for="ano_lancamento">Ano de lançamento do Gadget:</label>
+                    <input id="ano_lancamento" name="ano_lancamento" type="text" required />
+                    <label for="imageUrl">URL da imagem (opcional):</label>
+                    <input id="imageUrl" name="imageUrl" type="url" />
+                    <button type="submit">Cadastrar herói</button>
+                </form>
+                <p id="resposta"></p>
+            </section>
+        </main>
+        <footer>
+            <p>Prática de formulários com API.</p>
+        </footer>
+    </body>
+</html>
