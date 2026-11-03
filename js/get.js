@@ -35,18 +35,18 @@ async function buscarGadgets() {
 
       //preecher cada item desse card
 
-      card.querySelector(".nome").textContent = gadget.name;
-      card.querySelector(".poder").textContent = gadget.power;
-      card.querySelector(".categoria").textContent = gadget.category;
-      card.querySelector(".marca").textContent = gadget.brand;
-      card.querySelector(".preco").textContent = gadget.price;
-      card.querySelector(".ano_lancamento").textContent = gadget.releaseYear;
+      card.querySelector(".title").textContent = gadget.name;
+      card.querySelector(".poder").textContent = gadget.poder;
+      card.querySelector(".categoria").textContent = gadget.categoria;
+      card.querySelector(".marca").textContent = gadget.marca;
+      card.querySelector(".preco").textContent = gadget.preco;
+      card.querySelector(".ano_lancamento").textContent = gadget.ano_lancamento;
 
       const imagem = card.querySelector(".imagem-gadget");
 
       if (gadget.imageUrl){
         imagem.src = gadget.imageUrl;
-        imagem.alt = gadget.name;
+        imagem.alt = gadget.title;
         
         imagem.onerror = () => imagem.remove();
         
@@ -63,7 +63,7 @@ async function buscarGadgets() {
 
   } catch (error) {
     console.error(error);
-    resposta.textContent= "Não foi possível carregar os heróis. Tente novamente!" 
+    resposta.textContent= "Não foi possível carregar os gadgets. Tente novamente!" 
   }
 }
 

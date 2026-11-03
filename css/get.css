@@ -1,4 +1,5 @@
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -56,8 +57,7 @@ button:disabled {
   margin-top: 20px;
 }
 
-/* Lista de heróis */
-#lista-herois {
+#lista-gadgets {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -65,8 +65,8 @@ button:disabled {
   margin-top: 20px;
 }
 
-/* Card de cada herói */
-#lista-herois li {
+
+#lista-gadgets li {
   flex: 1 1 260px;
   min-width: 0;
   background-color: #eff6ff;
@@ -75,7 +75,7 @@ button:disabled {
   overflow: hidden;
 }
 
-/* Imagem do herói */
+
 .card-capa {
   height: 220px;
   background-color: #dbeafe;
@@ -92,7 +92,7 @@ button:disabled {
   color: #334155;
 }
 
-/* Informações do herói */
+
 .card-conteudo {
   padding: 20px;
 }
