@@ -36,7 +36,7 @@ async function buscarGadgets() {
       //preecher cada item desse card
 
       card.querySelector(".title").textContent = gadget.name;
-      card.querySelector(".poder").textContent = gadget.poder;
+      card.querySelector(".nome").textContent = gadget.name;
       card.querySelector(".categoria").textContent = gadget.categoria;
       card.querySelector(".marca").textContent = gadget.marca;
       card.querySelector(".preco").textContent = gadget.preco;
@@ -46,7 +46,7 @@ async function buscarGadgets() {
 
       if (gadget.imageUrl){
         imagem.src = gadget.imageUrl;
-        imagem.alt = gadget.title;
+        imagem.alt = gadget.name;
         
         imagem.onerror = () => imagem.remove();
         
